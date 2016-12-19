@@ -26,11 +26,12 @@ if (!is_null($events['events'])) {
 // 				'type' => 'text',
 // 				'text' => 'จันทร์-อังคาร   2-3  มกราคม   2560  วันปีใหม่'
 // 			}else{
+			if($text == "holiday"){
 			$messages = [
 				'type' => 'text',
 				'text' => $text
 			];
-// 			}
+			}
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
