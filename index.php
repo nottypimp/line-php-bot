@@ -22,10 +22,10 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			if($text == "holiday"){
-// 	$holiday= "วันจันทร์ - อังคาร 2-3 มกราคม 2560  วันขึ้นปีใหม่ วันเสาร์ 11  กุมภาพันธ์  2560  วันมาฆบูชา";	 
+                	$holiday= "วันจันทร์ - อังคาร 2-3 มกราคม 2560  วันขึ้นปีใหม่ วันเสาร์ 11  กุมภาพันธ์  2560  วันมาฆบูชา";	 
 			$messages = [
 				'type' => 'text',
-				'text' => "วันจันทร์ - อังคาร 2-3 มกราคม 2560  วันขึ้นปีใหม่\n วันเสาร์ 11  กุมภาพันธ์  2560  วันมาฆบูชา";
+				'text' => $holiday;
 					];
 			}
 			// Make a POST Request to Messaging API to reply to sender
