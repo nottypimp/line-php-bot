@@ -21,26 +21,19 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-// 			if($text == 'holiday'){
-// 			$messages = [
-// 				'type' => 'text',
-// 				'text' => 'จันทร์-อังคาร   2-3  มกราคม   2560  วันปีใหม่'
-// 			}else{
 			if($text == "holiday"){
-	$holiday= "วันจันทร์ - อังคาร 2-3 มกราคม 2560  วันขึ้นปีใหม่                       วันเสาร์ 11  กุมภาพันธ์  2560  วันมาฆบูชา";
-				
-					 
+	$holiday= "วันจันทร์ - อังคาร 2-3 มกราคม 2560  วันขึ้นปีใหม่                               วันเสาร์ 11  กุมภาพันธ์  2560  วันมาฆบูชา";	 
 			$messages = [
 				'type' => 'text',
 				'text' => $holiday
-			];
+					];
 			}
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
-			];
+				];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
