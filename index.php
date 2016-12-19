@@ -30,7 +30,7 @@ if (!is_null($events['events'])) {
 				$holiday= "วันจันทร์ - อังคาร 2-3 มกราคม 2560  วันขึ้นปีใหม่";
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $holiday
 			];
 			}
 			// Make a POST Request to Messaging API to reply to sender
