@@ -27,6 +27,7 @@ if (!is_null($events['events'])) {
 // 				'text' => 'จันทร์-อังคาร   2-3  มกราคม   2560  วันปีใหม่'
 // 			}else{
 			if($text == "holiday"){
+				$holiday= "วันจันทร์ - อังคาร 2-3 มกราคม 2560  วันขึ้นปีใหม่";
 			$messages = [
 				'type' => 'text',
 				'text' => $text
